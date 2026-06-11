@@ -1,17 +1,81 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Impressum</title>
-</head>
-<body>
-    <h1>Impressum</h1>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitConnect Impressum</title>
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --card: #151515;
+        --text: #f5f5f5;
+        --muted: #b8b8b8;
+        --accent: #ff7a00;
+        --border: rgba(255, 255, 255, 0.08);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, rgba(255, 122, 0, 0.12), transparent 30%), var(--bg);
+        color: var(--text);
+        line-height: 1.65;
+      }
+      .wrap { max-width: 860px; margin: 0 auto; padding: 32px 20px 64px; }
+      .eyebrow {
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+      h1 { margin: 10px 0 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 24px;
+        margin-top: 16px;
+      }
+      h2 { margin-top: 0; font-size: 22px; }
+      p { color: var(--muted); }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <div class="eyebrow">FitConnect</div>
+      <h1>Impressum</h1>
 
-    <p>
-        Daniel Danilov<br>
-        Musterstraße 1<br>
-        44145 Dortmund
-    </p>
+      <section>
+        <h2>Angaben gemäß § 5 DDG</h2>
+        <p>
+          Daniel Danilov<br />
+          Hohe Straße 20<br />
+          44139 Dortmund<br />
+          Deutschland
+        </p>
+      </section>
 
-    <p>E-Mail: deine@email.de</p>
-</body>
+      <section>
+        <h2>Kontakt</h2>
+        <p>
+          E-Mail: <a href="mailto:viracode.it@gmail.com">viracode.it@gmail.com</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Inhaltlich verantwortlich</h2>
+        <p>Daniel Danilov, Anschrift wie oben.</p>
+      </section>
+
+      <section>
+        <h2>Hinweis</h2>
+        <p>
+          FitConnect ist eine gewerblich betriebene App zur Organisation, Kommunikation und
+          Teilnahme an sportbezogenen Trainings und Community-Aktivitäten.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
